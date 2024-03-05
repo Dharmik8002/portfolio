@@ -1,0 +1,181 @@
+@media (max-width: 1200px) {
+  .main-nav {
+    padding: 8px 35px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .skills-container {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .right-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    padding: 10px 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  a::before {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+    margin-top: 0px;
+  }
+
+  .main-nav {
+    padding: 15px;
+    overflow: initial;
+    z-index: 99;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    max-height: 100vh;
+    padding-block: 20px;
+    transition: 0.2s ease-in-out;
+    height: 65vh;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .icons {
+    top: 250px;
+    left: 12px;
+  }
+
+  .header-left {
+    margin-left: 24px;
+  }
+
+  .title h1 {
+    font-size: 32px;
+  }
+
+  #elemment {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    max-width: 42vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-section {
+    flex-direction: column-reverse;
+  }
+
+  .header-left {
+    width: 70vw;
+  }
+
+  #element {
+    font-size: 32px;
+  }
+
+  .header-right img {
+    width: 420px;
+    margin-top: 50px;
+  }
+
+  .center-child-div2 {
+    flex-direction: column;
+    width: 70vw;
+  }
+
+  .skills-container{
+    padding: 125px 0;
+  }
+
+  .about-section h1{
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-right img {
+    width: 350px;
+  }
+
+  #element {
+    font-size: 24px;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .header-left {
+    gap: 20px;
+  }
+
+  .center-child-div2 {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-left h1 {
+    font-size: 28px;
+  }
+
+  .header-left {
+    width: 80vw;
+    gap: 20px;
+  }
+
+  .header-right img {
+    width: 270px;
+  }
+
+  .btn {
+    max-width: 66vw;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 25px;
+  }
+
+  .image img {
+    width: 270px;
+  }
+
+  .about-info {
+    gap: 20px;
+  }
+
+  .scrollToTop {
+    height: 30px;
+    width: 30px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
