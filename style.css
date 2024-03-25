@@ -510,8 +510,7 @@ header {
 /* contact section */
 
 .contact-section {
-  height: 115vh;
-
+  min-height: 120vh;
 }
 
 .contact-container {
