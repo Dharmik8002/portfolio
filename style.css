@@ -517,6 +517,8 @@ header {
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
+  gap: 60px;
+  width: 100%;
 }
 
 .main-title{
@@ -548,13 +550,13 @@ header {
   font-weight: 500;
 }
 
-.number {
+.number{
   font-size: 0.813rem;
   color: #64606c;
 }
 
 .contact-form {
-  width: 550px;
+  width: 100%; 
 }
 
 .contact-content {
@@ -570,8 +572,14 @@ header {
 }
 
 .contact-inputs {
+  /* width: 100%; */
   height: 500px;
 }
+
+textarea{
+  resize: none;
+}
+
 
 .contact-input {
   width: 100%;
