@@ -150,11 +150,13 @@
   .contact-container {
     flex-direction: column;
     gap: 30px;
+
   }
 
   .contact-info {
     gap: 20px;
-    width: 430px;
+    text-align: center;
+    align-items: center;
   }
 
   .footer-container {
@@ -233,5 +235,14 @@
   .project-card {
     max-width: 100%;
     margin-top: 25px;
+  }
+
+  .footer-links{
+    flex-direction: column;
+  }
+
+  .footer-copy{
+    font-size: 14px;
+    line-height: 32px;
   }
 }
