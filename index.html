@@ -39,7 +39,7 @@
                 >
               </li>
               <li>
-                <a href="#" class="nav-link" onclick="activLink(this)"
+                <a href="#contact" class="nav-link" onclick="activLink(this)"
                   >Contact</a
                 >
               </li>
@@ -152,9 +152,11 @@
             quidem, aliquam earum delectus.
           </p>
 
-          <button class="btn">
-            Download Resume <i class="fa-solid fa-download"></i>
-          </button>
+          <a  download="" href="./pdf/Resume.pdf" >
+            <button  class="btn">
+              Download Resume <i class="fa-solid fa-download"></i>
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -331,7 +333,7 @@
           ></a>
         </div>
 
-        <div class="project-card flex1">
+        <!-- <div class="project-card flex1">
           <img src="./img/cardimg.svg" alt="" />
           <h3>Tic Tac Toe</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -356,10 +358,107 @@
             <a href="#" class="Secondary-button">
               Demo <i class="fa-solid fa-right-long"></i
             ></a>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
+
+    <section class="contact-section container scroll" id="contact">  
+      <h2 class="main-title">Contact Me</h2>
+      <div class="contact-sub-title">Get in touch</div>
+
+      <div class="contact-container">
+        <div>
+          <div class="contact-info">
+            <div>
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <h3 class="contact-title">Call Me</h3>
+              <div class="number">81284 90336</div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <h3 class="contact-title">Email</h3>
+                <div class="number">dharmikmodi8002@gmail.com</div>
+              </div>
+
+              <div>
+                  <i class="fa-solid fa-location-dot contact-icon"></i>
+                  <h3 class="contact-title">Location</h3>
+                  <div class="number">Vastral-Ahmedabad,Gujarat-382418 </div>
+                </div>
+          </div>
+        </div>
+    
+          <form action="" class="contact-form ">
+          <div class="contact-inputs ">
+            <div class="contact-content">
+               <label for="name" class="contact-label">Name</label>
+              <input type="text" class="contact-input">
+            </div>
+               
+            <div class="contact-content">
+              <label for="email" class="contact-label">Email</label>
+              <input type="email" class="contact-input">
+            </div>
+              
+            <div class="contact-content">
+              <label for="project" class="contact-label">project</label>
+              <input type="text" class="contact-input">
+            </div>
+
+            <div class="contact-content">
+              <label for="" class="contact-label">message</label>
+             <textarea name="" id="" cols="" rows="7" class="contact-input"></textarea>
+            </div>
+             
+             <a href="" class=" btn">
+              Send Message
+              <i class="fa-solid fa-paper-plane-top button-icon"></i> 
+               <i class="fa-solid fa-paper-plane button-icon"></i> 
+             </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section> 
+
+    <footer class="footer scroll">
+      <div class="footer-container ">
+      <div>
+        <h1 class="footer-title">Dharmik</h1>
+        <span class="footer-subtitle">Frontend Developer</span>
+      </div>
+        <ul class="footer-links">
+          <li>
+            <a href="#services" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="footer-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contactme</a>
+          </li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Dharmik8002" class="footer-social" target="_blank">
+               <i class="fa-brands fa-github"></i>
+            </a>
+          
+           <a href="https://www.linkedin.com/in/dharmik-modi-380756245/" target="_blank" class="footer-social">
+              <i class="fa-brands fa-linkedin-in"></i>
+           </a>
+
+          <a href="https://www.instagram.com/dharmik_8002_/" class="footer-social" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; Dharmik. All right reserved</p>
+    </footer>
 
     <script>
       function id(id) {
@@ -423,9 +522,6 @@
         loop: true,
       });
     </script>
-    <script
-      src="https://kit.fontawesome.com/3d1fd9543c.js"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://kit.fontawesome.com/3d1fd9543c.js" crossorigin="anonymous"></script>
   </body>
 </html>
