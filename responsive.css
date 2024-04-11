@@ -22,6 +22,10 @@
   .right-img img {
     width: 100%;
   }
+
+  header {
+    padding: 50px 0px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -76,7 +80,7 @@
   }
 
   .header-left {
-    margin-left: 24px;
+    margin-left: 40px;
   }
 
   .first-title h1 {
@@ -106,6 +110,7 @@
   }
   .header-section {
     flex-direction: column-reverse;
+    gap: 20px;
   }
 
   .header-left {
@@ -116,9 +121,14 @@
     font-size: 32px;
   }
 
-  .header-right img {
-    width: 420px;
-    margin-top: 50px;
+  .header {
+    padding: 0;
+  }
+
+  .home_svg {
+    height: 330px;
+    width: 330px;
+    margin-top: 12px;
   }
 
   .center-child-div2 {
@@ -150,7 +160,6 @@
   .contact-container {
     flex-direction: column;
     gap: 30px;
-
   }
 
   .contact-info {
@@ -199,6 +208,12 @@
     width: 270px;
   }
 
+  .home_svg {
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+  }
+
   .btn {
     max-width: 66vw;
     padding: 14px 16px;
@@ -237,11 +252,11 @@
     margin-top: 25px;
   }
 
-  .footer-links{
+  .footer-links {
     flex-direction: column;
   }
 
-  .footer-copy{
+  .footer-copy {
     font-size: 14px;
     line-height: 32px;
   }

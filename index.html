@@ -1,339 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dharmik's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-  </head>
 
-  <body>
-    <a href="#" class="scrollToTop" id="scrollToTopElem"> > </a>
-    <!-- navbar -->
-    <nav>
-      <div class="center-child-div main-nav-tag scroll" id="mainNavContainer">
-        <div class="container main-nav flex">
-          <a href="#" id="logo">Portfolio</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharmik's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="icon" type="image/x-icon" href="./img/programmer.png">
+</head>
 
-          <div class="nav-links" id="nav-links">
-            <ul class="flex">
-              <li>
-                <a href="#" class="active nav-link" onclick="activLink(this)"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="#about" class="nav-link" onclick="activLink(this)"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a href="#skills" class="nav-link" onclick="activLink(this)"
-                  >Skills</a
-                >
-              </li>
-              <li>
-                <a href="#projects" class="nav-link" onclick="activLink(this)"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a href="#contact" class="nav-link" onclick="activLink(this)"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+<body>
+  <a href="#" class="scrollToTop" id="scrollToTopElem"> > </a>
+  <!-- navbar -->
+  <nav>
+    <div class="center-child-div main-nav-tag scroll" id="mainNavContainer">
+      <div class="container main-nav flex">
+        <a href="#" id="logo">Portfolio</a>
 
-          <div class="nav-toggle flex" id="nav-toggle">
-            <i
-              class="fa-solid fa-bars fa-xl"
-              id="nav-burger"
-              onclick="toggleNav(this)"
-            ></i>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Home -->
-    <header>
-      <div class="container header-section flex scroll">
-        <div class="header-left">
-          <div class="icons">
-            <a href="https://github.com/Dharmik8002" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/dharmik-modi-380756245/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a href="https://www.instagram.com/dharmik_8002_/" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </div>
-          <div class="first-title">
-            <div>Hello, I'm</div>
-            <h1>Dharmik Modi</h1>
-            <span id="element"></span>
-            <button class="btn flex">Contact Me</button>
-          </div>
+        <div class="nav-links" id="nav-links">
+          <ul class="flex">
+            <li>
+              <a href="#" class="active nav-link" onclick="activLink(this)">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link" onclick="activLink(this)">About</a>
+            </li>
+            <li>
+              <a href="#skills" class="nav-link" onclick="activLink(this)">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-link" onclick="activLink(this)">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" onclick="activLink(this)">Contact</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="header-right">
-          <!-- <svg
-           class="svg"
-            id="sw-js-blob-svg"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-                <stop
-                  id="stop1"
-                  stop-color="rgba(248, 117, 55, 1)"
-                  offset="0%"
-                ></stop>
-                <stop
-                  id="stop2"
-                  stop-color="rgba(251, 168, 31, 1)"
-                  offset="100%"
-                ></stop>
-              </linearGradient>
-            </defs>
-
-            <mask id="mask1" mask-type="alpha">
-              <path
-              fill="url(#sw-gradient)"
-              d="M26.4,-30.4C33.7,-25.3,38.7,-16.5,41,-6.7C43.3,3.1,43,13.8,37.4,19.8C31.8,25.8,21,26.9,11.9,28.5C2.7,30,-4.8,32,-11.1,29.9C-17.4,27.9,-22.5,21.9,-27.9,14.9C-33.4,7.9,-39.4,0,-38.8,-7.4C-38.2,-14.8,-31,-21.7,-23.5,-26.7C-16,-31.8,-8,-35,0.8,-36C9.6,-36.9,19.1,-35.5,26.4,-30.4Z"
-              width="100%"
-              height="100%"
-              transform="translate(50 50)"
-              stroke-width="0"
-              style="transition: all 0.3s ease 0s"
-            ></path>
-
-            </mask>
-
-            <g mask="url(#mask1)">
-              <path
-                fill="url(#sw-gradient)"
-                d="M26.4,-30.4C33.7,-25.3,38.7,-16.5,41,-6.7C43.3,3.1,43,13.8,37.4,19.8C31.8,25.8,21,26.9,11.9,28.5C2.7,30,-4.8,32,-11.1,29.9C-17.4,27.9,-22.5,21.9,-27.9,14.9C-33.4,7.9,-39.4,0,-38.8,-7.4C-38.2,-14.8,-31,-21.7,-23.5,-26.7C-16,-31.8,-8,-35,0.8,-36C9.6,-36.9,19.1,-35.5,26.4,-30.4Z"
-                width="100%"
-                height="100%"
-                transform="translate(50 50)"
-                stroke-width="0"
-                style="transition: all 0.3s ease 0s"
-              ></path>
-              <image href="./img/portfolio-img.jpg" x="12" y="18" alt="">
-                
-            </g>
-          </svg> -->
-          <img src="./img/home_video.gif" alt="home video" />
-        </div>
-      </div>
-    </header>
-
-    <!-- About -->
-    <div class="container about-section scroll" id="about">
-      <h1>About Me</h1>
-      <p style="text-align: center">My Introduction</p>
-      <div class="about-info">
-        <div class="image">
-          <img src="./img/home_video.gif" alt="" />
-        </div>
-        <div class="content">
-          <p class="content-decription">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            eius vel aliquam nulla, sapiente voluptas assumenda laudantium in
-            accusamus delectus reiciendis reprehenderit quasi. Sequi alias natus
-            quidem, aliquam earum delectus.
-          </p>
-
-          <a  download="" href="./pdf/Dharmik_Resume.pdf" >
-            <button  class="btn">
-              Download Resume <i class="fa-solid fa-download"></i>
-            </button>
-          </a>
+        <div class="nav-toggle flex" id="nav-toggle">
+          <i class="fa-solid fa-bars fa-xl" id="nav-burger" onclick="toggleNav(this)"></i>
         </div>
       </div>
     </div>
+  </nav>
 
-    <!-- skills-container -->
-
-    <section class="skills-container scroll">
-      <h1 class="heading" id="skills">Skills</h1>
-      <div class="center-child-div2">
-        <div class="skills" style="width: 100%">
-          <h1>Programing Skills</h1>
-          <hr style="line-height: 8px" />
-          <div class="progress-head">
-            <h2>HTML</h2>
-            <div class="percentage" style="font-weight: 500">94%</div>
-          </div>
-          <div class="progress-bar">
-            <div class="html"></div>
-          </div>
-
-          <div class="progress-head">
-            <h2>CSS</h2>
-            <div class="percentage" style="font-weight: 500">90%</div>
-          </div>
-          <div class="progress-bar">
-            <div class="css"></div>
-          </div>
-
-          <div class="progress-head">
-            <h2>Javascript</h2>
-            <div class="percentage" style="font-weight: 500">80%</div>
-          </div>
-          <div class="progress-bar">
-            <div class="javascript"></div>
-          </div>
-
-          <div class="progress-head">
-            <h2>React</h2>
-            <div class="percentage" style="font-weight: 500">75%</div>
-          </div>
-          <div class="progress-bar">
-            <div class="react"></div>
-          </div>
+  <!-- Home -->
+  <header>
+    <div class="container header-section flex scroll">
+      <div class="header-left">
+        <div class="icons">
+          <a href="https://github.com/Dharmik8002" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dharmik-modi-380756245/" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/dharmik_8002_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
-
-        <div class="right-img">
-          <img src="./img/home_video.gif" alt="" />
+        <div class="first-title">
+          <div>Hello, I'm</div>
+          <h1>Dharmik Modi</h1>
+          <span id="element"></span>
+          <button class="btn flex">Contact Me</button>
         </div>
       </div>
-    </section>
 
-    <!-- qaulification-section -->
-    <section class="qualification-part scroll">
-      <h2 class="title">Qualifications</h2>
-      <div class="sub-title">My Personal journey</div>
+      <div class="header-right">
+        <!--?xml version="1.0" standalone="no"?--> 
+        <svg  class="home_svg" id="sw-js-blob-svg" viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+              <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>
+              <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
 
-      <div class="qaulification-container container">
-        <div class="qaulifiaction-tabs">
-          <div class="qulification-button button--flex">
-            <i class="fa-solid fa-graduation-cap q-icon"></i>
-            Education
-          </div>
-          <!-- <div class="qulification-button">
+          <mask id="mask1" mask-type="alpha">
+            <path fill="none;"
+            d="M25.3,-28.1C33,-23.7,39.7,-15.9,40,-8C40.2,-0.1,34.1,8,28.7,15.7C23.2,23.3,18.5,30.5,11.8,33.4C5.1,36.4,-3.6,35,-13.1,32.9C-22.5,30.8,-32.8,27.8,-37.9,20.9C-43,14,-42.9,3.2,-40.8,-6.9C-38.6,-17,-34.4,-26.4,-27.2,-30.9C-20.1,-35.5,-10,-35,-0.6,-34.3C8.8,-33.6,17.6,-32.5,25.3,-28.1Z"
+            width="100%" height="100%" transform="translate(50 50)" stroke-width="0"
+            style="transition: all 0.3s ease 0s;"></path>
+          </mask>
+
+          <g mask="url(#mask1)">
+            <path fill="none"
+            d="M25.3,-28.1C33,-23.7,39.7,-15.9,40,-8C40.2,-0.1,34.1,8,28.7,15.7C23.2,23.3,18.5,30.5,11.8,33.4C5.1,36.4,-3.6,35,-13.1,32.9C-22.5,30.8,-32.8,27.8,-37.9,20.9C-43,14,-42.9,3.2,-40.8,-6.9C-38.6,-17,-34.4,-26.4,-27.2,-30.9C-20.1,-35.5,-10,-35,-0.6,-34.3C8.8,-33.6,17.6,-32.5,25.3,-28.1Z"
+            width="100%" height="100%" transform="translate(50 50)" stroke-width="2" stroke="black"
+            style="transition: all 0.3s ease 0s;"></path>
+
+            <image class="home_svg-img" x="15" y="12" href="./img/profile-img1.png"/>
+          <g>
+            
+        </svg>
+        <!-- <img src="./img/home_video.gif" alt="home video" /> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <div class="container about-section scroll" id="about">
+    <h1>About Me</h1>
+    <p style="text-align: center">My Introduction</p>
+    <div class="about-info">
+      <div class="image">
+        <img src="./img/home_video.gif" alt="" />
+      </div>
+      <div class="content">
+        <p class="content-decription">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+          eius vel aliquam nulla, sapiente voluptas assumenda laudantium in
+          accusamus delectus reiciendis reprehenderit quasi. Sequi alias natus
+          quidem, aliquam earum delectus.
+        </p>
+
+        <a download="" href="./pdf/Dharmik_Resume.pdf">
+          <button class="btn">
+            Download Resume <i class="fa-solid fa-download"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- skills-container -->
+
+  <section class="skills-container scroll">
+    <h1 class="heading" id="skills">Skills</h1>
+    <div class="center-child-div2">
+      <div class="skills" style="width: 100%">
+        <h1>Programing Skills</h1>
+        <hr style="line-height: 8px" />
+        <div class="progress-head">
+          <h2>HTML</h2>
+          <div class="percentage" style="font-weight: 500">94%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="html"></div>
+        </div>
+
+        <div class="progress-head">
+          <h2>CSS</h2>
+          <div class="percentage" style="font-weight: 500">90%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="css"></div>
+        </div>
+
+        <div class="progress-head">
+          <h2>Javascript</h2>
+          <div class="percentage" style="font-weight: 500">80%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="javascript"></div>
+        </div>
+
+        <div class="progress-head">
+          <h2>React</h2>
+          <div class="percentage" style="font-weight: 500">75%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="react"></div>
+        </div>
+      </div>
+
+      <div class="right-img">
+        <img src="./img/home_video.gif" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- qaulification-section -->
+  <section class="qualification-part scroll">
+    <h2 class="title">Qualifications</h2>
+    <div class="sub-title">My Personal journey</div>
+
+    <div class="qaulification-container container">
+      <div class="qaulifiaction-tabs">
+        <div class="qulification-button button--flex">
+          <i class="fa-solid fa-graduation-cap q-icon"></i>
+          Education
+        </div>
+        <!-- <div class="qulification-button">
             <i class="fa-solid fa-briefcase q-icon"></i>
             Work
           </div> -->
-        </div>
+      </div>
 
-        <div class="qualification-section">
-          <div class="qaulification-content">
-            <div class="qualification-data">
-              <div style="margin-left: auto">
-                <h3 class="qua-title">SSC</h3>
-                <span class="qua-sub-title">Arpan Vidhya Sankul </span>
-                <div class="qua-Calander">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2017 - 2018
-                </div>
-              </div>
-              <div>
-                <span class="qua-rounder"></span>
-                <span class="qua-line"></span>
+      <div class="qualification-section">
+        <div class="qaulification-content">
+          <div class="qualification-data">
+            <div style="margin-left: auto">
+              <h3 class="qua-title">SSC</h3>
+              <span class="qua-sub-title">Arpan Vidhya Sankul </span>
+              <div class="qua-Calander">
+                <i class="fa-solid fa-calendar-days"></i>
+                2017 - 2018
               </div>
             </div>
+            <div>
+              <span class="qua-rounder"></span>
+              <span class="qua-line"></span>
+            </div>
+          </div>
 
-            <!-- qualification-2 -->
-            <div class="qualification-data">
-              <div></div>
+          <!-- qualification-2 -->
+          <div class="qualification-data">
+            <div></div>
 
-              <div>
-                <span class="qua-rounder"></span>
-                <span class="qua-line"></span>
-              </div>
-
-              <div>
-                <h3 class="qua-title">HSC</h3>
-                <span class="qua-sub-title">V.K Vidhyalay</span>
-                <div class="qua-Calander">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2019 - 2020
-                </div>
-              </div>
+            <div>
+              <span class="qua-rounder"></span>
+              <span class="qua-line"></span>
             </div>
 
-            <!-- qualifiaction-3 -->
-
-            <div class="qualification-data">
-              <div style="margin-left: auto">
-                <h3 class="qua-title">IMSCIT</h3>
-                <span class="qua-sub-title">Silver Oak University</span>
-                <div class="qua-Calander">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2020 - 2024
-                </div>
-              </div>
-              <div>
-                <span class="qua-rounder"></span>
-                <span class="qua-line"></span>
+            <div>
+              <h3 class="qua-title">HSC</h3>
+              <span class="qua-sub-title">V.K Vidhyalay</span>
+              <div class="qua-Calander">
+                <i class="fa-solid fa-calendar-days"></i>
+                2019 - 2020
               </div>
             </div>
+          </div>
 
-            <!-- qualifiaction-4 -->
-            <div class="qualification-data">
-              <div></div>
+          <!-- qualifiaction-3 -->
 
-              <div>
-                <span class="qua-rounder"></span>
-                <!-- <span class="qua-line"></span> -->
+          <div class="qualification-data">
+            <div style="margin-left: auto">
+              <h3 class="qua-title">IMSCIT</h3>
+              <span class="qua-sub-title">Silver Oak University</span>
+              <div class="qua-Calander">
+                <i class="fa-solid fa-calendar-days"></i>
+                2020 - 2024
               </div>
+            </div>
+            <div>
+              <span class="qua-rounder"></span>
+              <span class="qua-line"></span>
+            </div>
+          </div>
 
-              <div>
-                <h3 class="qua-title">Web Development</h3>
-                <span class="qua-sub-title">xyz institue</span>
-                <div class="qua-Calander">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2020 - 2024
-                </div>
+          <!-- qualifiaction-4 -->
+          <div class="qualification-data">
+            <div></div>
+
+            <div>
+              <span class="qua-rounder"></span>
+              <!-- <span class="qua-line"></span> -->
+            </div>
+
+            <div>
+              <h3 class="qua-title">Web Development</h3>
+              <span class="qua-sub-title">xyz institue</span>
+              <div class="qua-Calander">
+                <i class="fa-solid fa-calendar-days"></i>
+                2020 - 2024
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="project-section container scroll" id="projects">
-      <div class="title">
-        <h3>My Projects</h3>
+  <section class="project-section container scroll" id="projects">
+    <div class="title">
+      <h3>My Projects</h3>
+    </div>
+    <div class="project-container flex1">
+      <div class="project-card flex1">
+        <img src="./img/tic-tac-toe1.jpg" alt="" />
+        <h3>Tic Tac Toe</h3>
+        <p>The Tic Tac Toe Game project is a classic two-player game where players aim to create a row, column, or
+          diagonal of their symbol ("X" or "O") on a 3x3 grid.</p>
+        <a href="https://dharmik8002.github.io/Tic-Tac-Toe/" target="_blank" class="Secondary-button">
+          Demo <i class="fa-solid fa-right-long"></i></a>
       </div>
-      <div class="project-container flex1">
-        <div class="project-card flex1">
-          <img src="./img/tic-tac-toe1.jpg" alt="" />
-          <h3>Tic Tac Toe</h3>
-          <p>The Tic Tac Toe Game project is a classic two-player game where players aim to create a row, column, or diagonal of their symbol ("X" or "O") on a 3x3 grid.</p>
-          <a href="https://dharmik8002.github.io/Tic-Tac-Toe/" target="_blank" class="Secondary-button">
-            Demo <i class="fa-solid fa-right-long"></i
-          ></a>
-        </div>
 
-        <div class="project-card flex1">
-          <img src="./img/rock-paper-scissors1.png" alt="" />
-          <h3>Rock Paper Scissors</h3>
-          <p>The Rock Paper Scissors game project aims to develop a simple yet engaging game where two players compete by choosing between rock, paper, or scissors.</p>
-          <a href="https://dharmik8002.github.io/Rock-Paper-Scissors-/" class="Secondary-button">
-            Demo <i class="fa-solid fa-right-long"></i
-          ></a>
-        </div>
+      <div class="project-card flex1">
+        <img src="./img/rock-paper-scissors1.png" alt="" />
+        <h3>Rock Paper Scissors</h3>
+        <p>The Rock Paper Scissors game project aims to develop a simple yet engaging game where two players compete by
+          choosing between rock, paper, or scissors.</p>
+        <a href="https://dharmik8002.github.io/Rock-Paper-Scissors-/" class="Secondary-button">
+          Demo <i class="fa-solid fa-right-long"></i></a>
+      </div>
 
-        <div class="project-card flex1">
-          <img src="./img/cc.jpg" alt="" />
-          <h3>Currncy Convertor</h3>
-          <p>The Currency Converter project aims to develop a tool that allows users to convert between different currencies.It will fetch real-time exchange rate data from an API.</p>
-          <a href="#" class="Secondary-button">
-            Demo <i class="fa-solid fa-right-long"></i
-          ></a>
-        </div>
+      <div class="project-card flex1">
+        <img src="./img/cc.jpg" alt="" />
+        <h3>Currncy Convertor</h3>
+        <p>The Currency Converter project aims to develop a tool that allows users to convert between different
+          currencies.It will fetch real-time exchange rate data from an API.</p>
+        <a href="#" class="Secondary-button">
+          Demo <i class="fa-solid fa-right-long"></i></a>
+      </div>
 
-        <!-- <div class="project-card flex1">
+      <!-- <div class="project-card flex1">
           <img src="./img/cardimg.svg" alt="" />
           <h3>Tic Tac Toe</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -359,169 +319,170 @@
               Demo <i class="fa-solid fa-right-long"></i
             ></a>
           </div> -->
-        </div>
-      </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
-    <section class="contact-section container scroll" id="contact">  
-      <h2 class="main-title">Contact Me</h2>
-      <div class="contact-sub-title">Get in touch</div>
+  <section class="contact-section container scroll" id="contact">
+    <h2 class="main-title">Contact Me</h2>
+    <div class="contact-sub-title">Get in touch</div>
 
-      <div class="contact-container">
-        <div>
-          <div class="contact-info">
-            <div>
-              <i class="fa-solid fa-phone contact-icon"></i>
-              <h3 class="contact-title">Call Me</h3>
-              <div class="number">81284 90336</div>
-            </div>
+    <div class="contact-container">
+      <div>
+        <div class="contact-info">
+          <div>
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <h3 class="contact-title">Call Me</h3>
+            <div class="number">81284 90336</div>
+          </div>
 
-            <div>
-                <i class="fa-solid fa-envelope contact-icon"></i>
-                <h3 class="contact-title">Email</h3>
-                <div class="number">dharmikmodi8002@gmail.com</div>
-              </div>
+          <div>
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <h3 class="contact-title">Email</h3>
+            <div class="number">dharmikmodi8002@gmail.com</div>
+          </div>
 
-              <div>
-                  <i class="fa-solid fa-location-dot contact-icon"></i>
-                  <h3 class="contact-title">Location</h3>
-                  <div class="number">Vastral-Ahmedabad,Gujarat-382418 </div>
-                </div>
+          <div>
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <h3 class="contact-title">Location</h3>
+            <div class="number">Vastral-Ahmedabad,Gujarat-382418 </div>
           </div>
         </div>
-    
-          <form action="" class="contact-form">
-          <div class="contact-inputs">
-            <div class="contact-content">
-               <label for="name" class="contact-label">Name</label>
-              <input type="text" class="contact-input">
-            </div>
-               
-            <div class="contact-content">
-              <label for="email" class="contact-label">Email</label>
-              <input type="email" class="contact-input">
-            </div>
-              
-            <div class="contact-content">
-              <label for="project" class="contact-label">project</label>
-              <input type="text" class="contact-input">
-            </div>
-
-            <div class="contact-content">
-              <label for="" class="contact-label">message</label>
-             <textarea name="" id="" cols="" rows="7" class="contact-input" ></textarea>
-            </div>
-             
-             <a href="" class=" full-btn">
-              Send Message
-              <i class="fa-solid fa-paper-plane-top button-icon"></i> 
-               <i class="fa-solid fa-paper-plane button-icon"></i> 
-             </a>
-            </div>
-          </div>
-        </form>
       </div>
-    </section> 
 
-    <footer class="footer scroll">
-      <div class="footer-container ">
+      <form action="" class="contact-form">
+        <div class="contact-inputs">
+          <div class="contact-content">
+            <label for="name" class="contact-label">Name</label>
+            <input type="text" class="contact-input">
+          </div>
+
+          <div class="contact-content">
+            <label for="email" class="contact-label">Email</label>
+            <input type="email" class="contact-input">
+          </div>
+
+          <div class="contact-content">
+            <label for="project" class="contact-label">project</label>
+            <input type="text" class="contact-input">
+          </div>
+
+          <div class="contact-content">
+            <label for="" class="contact-label">message</label>
+            <textarea name="" id="" cols="" rows="7" class="contact-input"></textarea>
+          </div>
+
+          <a href="" class=" full-btn">
+            Send Message
+            <i class="fa-solid fa-paper-plane-top button-icon"></i>
+            <i class="fa-solid fa-paper-plane button-icon"></i>
+          </a>
+        </div>
+    </div>
+    </form>
+    </div>
+  </section>
+
+  <footer class="footer scroll">
+    <div class="footer-container ">
       <div>
         <h1 class="footer-title">Dharmik</h1>
         <span class="footer-subtitle">Frontend Developer</span>
       </div>
-        <ul class="footer-links">
-          <li>
-            <a href="#services" class="footer-link">Services</a>
-          </li>
+      <ul class="footer-links">
+        <li>
+          <a href="#services" class="footer-link">Services</a>
+        </li>
 
-          <li>
-            <a href="#portfolio" class="footer-link">Portfolio</a>
-          </li>
+        <li>
+          <a href="#portfolio" class="footer-link">Portfolio</a>
+        </li>
 
-          <li>
-            <a href="#contact" class="footer-link">Contactme</a>
-          </li>
-        </ul>
+        <li>
+          <a href="#contact" class="footer-link">Contactme</a>
+        </li>
+      </ul>
 
-        <div class="footer-socials">
-          <a href="https://github.com/Dharmik8002" class="footer-social" target="_blank">
-               <i class="fa-brands fa-github"></i>
-            </a>
-          
-           <a href="https://www.linkedin.com/in/dharmik-modi-380756245/" target="_blank" class="footer-social">
-              <i class="fa-brands fa-linkedin-in"></i>
-           </a>
+      <div class="footer-socials">
+        <a href="https://github.com/Dharmik8002" class="footer-social" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
 
-          <a href="https://www.instagram.com/dharmik_8002_/" class="footer-social" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
+        <a href="https://www.linkedin.com/in/dharmik-modi-380756245/" target="_blank" class="footer-social">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://www.instagram.com/dharmik_8002_/" class="footer-social" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
       </div>
-      <p class="footer-copy">&copy; Dharmik. All rights reserved</p>
-    </footer>
+    </div>
+    <p class="footer-copy">&copy; Dharmik. All rights reserved</p>
+  </footer>
 
-    <script>
-      function id(id) {
-        return document.getElementById(id);
-      }
+  <script>
+    function id(id) {
+      return document.getElementById(id);
+    }
 
-      let mainNavContainer = id("mainNavContainer");
-      let scrollToTopElem = id("scrollToTopElem");
-      let allNavlink = document.querySelectorAll(".nav-link");
+    let mainNavContainer = id("mainNavContainer");
+    let scrollToTopElem = id("scrollToTopElem");
+    let allNavlink = document.querySelectorAll(".nav-link");
 
-      function activLink(elem) {
-        allNavlink.forEach((e) => {
-          e.classList.remove("active");
-        });
-        elem.classList.add("active");
-        // toggleNav(id("nav-burger"));
-        closeNav(id("nav-burger"));
-      }
-
-      function closeNav(elem) {
-        const navLinks = document.getElementById("nav-links");
-
-        elem.classList.remove("fa-xmark");
-        elem.classList.add("fa-bars");
-
-        navLinks.classList.remove("active");
-      }
-
-      window.addEventListener("scroll", (e) => {
-        if (Math.round(window.scrollY) >= 50) {
-          mainNavContainer.classList.add("active-main-nav-tag");
-          scrollToTopElem.classList.add("active-scrollToTop");
-        } else {
-          mainNavContainer.classList.remove("active-main-nav-tag");
-          scrollToTopElem.classList.remove("active-scrollToTop");
-        }
+    function activLink(elem) {
+      allNavlink.forEach((e) => {
+        e.classList.remove("active");
       });
-      const toggleButton = document.getElementById("#nav-toggle");
+      elem.classList.add("active");
+      // toggleNav(id("nav-burger"));
+      closeNav(id("nav-burger"));
+    }
+
+    function closeNav(elem) {
       const navLinks = document.getElementById("nav-links");
 
-      function toggleNav(elem) {
-        if (elem.classList.value.includes("fa-bars")) {
-          elem.classList.remove("fa-bars");
-          elem.classList.add("fa-xmark");
-        } else {
-          elem.classList.remove("fa-xmark");
-          elem.classList.add("fa-bars");
-        }
+      elem.classList.remove("fa-xmark");
+      elem.classList.add("fa-bars");
 
-        navLinks.classList.toggle("active");
+      navLinks.classList.remove("active");
+    }
+
+    window.addEventListener("scroll", (e) => {
+      if (Math.round(window.scrollY) >= 50) {
+        mainNavContainer.classList.add("active-main-nav-tag");
+        scrollToTopElem.classList.add("active-scrollToTop");
+      } else {
+        mainNavContainer.classList.remove("active-main-nav-tag");
+        scrollToTopElem.classList.remove("active-scrollToTop");
       }
-    </script>
+    });
+    const toggleButton = document.getElementById("#nav-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    function toggleNav(elem) {
+      if (elem.classList.value.includes("fa-bars")) {
+        elem.classList.remove("fa-bars");
+        elem.classList.add("fa-xmark");
+      } else {
+        elem.classList.remove("fa-xmark");
+        elem.classList.add("fa-bars");
+      }
 
-    <script>
-      var typing = new Typed("#element", {
-        strings: ["Web Developer", "Web Designer"],
-        typeSpeed: 80,
-        backSpeed: 30,
-        loop: true,
-      });
-    </script>
+      navLinks.classList.toggle("active");
+    }
+  </script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typing = new Typed("#element", {
+      strings: ["Web Developer", "Web Designer"],
+      typeSpeed: 80,
+      backSpeed: 30,
+      loop: true,
+    });
+  </script>
   <script src="https://kit.fontawesome.com/3d1fd9543c.js" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>

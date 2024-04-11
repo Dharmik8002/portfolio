@@ -177,7 +177,7 @@ a {
 
 #element {
   color: #4911b8;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .typed-cursor {
@@ -239,6 +239,18 @@ header {
 
 .header-right img {
   width: 100%;
+}
+
+.home_svg {
+  height: 450px;
+  width: 450px;
+  
+}
+
+.home_svg-img{
+  width: 58px;
+  color: #5805ff87;
+  height: 82px;
 }
 
 /* about */
@@ -601,9 +613,10 @@ textarea {
   background-color: #5805ff;
   border: none;
   transition: all 0.2s ease-in;
+  margin-bottom: 12px;
 }
 
-.full-btn:hover{
+.full-btn:hover {
   background-color: black;
 }
 /* footer */
