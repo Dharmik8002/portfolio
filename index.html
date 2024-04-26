@@ -21,19 +21,19 @@
         <div class="nav-links" id="nav-links">
           <ul class="flex">
             <li>
-              <a href="#" class="active nav-link" onclick="activLink(this)">Home</a>
+              <a href="#" class="active nav-link" onclick="activeLink(this)">Home</a>
             </li>
             <li>
-              <a href="#about" class="nav-link" onclick="activLink(this)">About</a>
+              <a href="#about" class="nav-link" onclick="activeLink(this)">About</a>
             </li>
             <li>
-              <a href="#skills" class="nav-link" onclick="activLink(this)">Skills</a>
+              <a href="#skills" class="nav-link" onclick="activeLink(this)">Skills</a>
             </li>
             <li>
-              <a href="#projects" class="nav-link" onclick="activLink(this)">Projects</a>
+              <a href="#projects" class="nav-link" onclick="activeLink(this)">Projects</a>
             </li>
             <li>
-              <a href="#contact" class="nav-link" onclick="activLink(this)">Contact</a>
+              <a href="#contact" class="nav-link" onclick="activeLink(this)">Contact</a>
             </li>
           </ul>
         </div>
@@ -106,15 +106,18 @@
       </div>
       <div class="content">
         <p class="content-decription">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-          eius vel aliquam nulla, sapiente voluptas assumenda laudantium in
-          accusamus delectus reiciendis reprehenderit quasi. Sequi alias natus
-          quidem, aliquam earum delectus.
+          Hii, I am Dharmik Modi from India. I am a Frontend Web Developer. I
+          have completed my IMSCIT in Computer Application from Silver Oak University.
+          I have 1 year of experience in web development. I have worked on various
+          projects and have gained a lot of experience in this field. I am a
+          quick learner and I am always looking for new challenges. I am
+          passionate about my work and I am always looking for ways to improve
+          my skills and knowledge. 
         </p>
 
-        <a download="" href="./pdf/Dharmik_Resume.pdf">
+        <a download="" href="./pdf/CV.pdf">
           <button class="btn">
-            Download Resume <i class="fa-solid fa-download"></i>
+            Download CV <i class="fa-solid fa-download"></i>
           </button>
         </a>
       </div>
@@ -429,7 +432,7 @@
     let scrollToTopElem = id("scrollToTopElem");
     let allNavlink = document.querySelectorAll(".nav-link");
 
-    function activLink(elem) {
+    function activeLink(elem) {
       allNavlink.forEach((e) => {
         e.classList.remove("active");
       });
