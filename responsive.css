@@ -101,6 +101,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header-right img {
+    height: 300px;
+    margin-top: 10px;
+  }
   .scroll {
     scroll-snap-stop: always;
   }

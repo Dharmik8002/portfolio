@@ -248,10 +248,16 @@ header {
 }
 
 .home_svg-img{
-  width: 58px;
+  width: 77px;
   color: #5805ff87;
-  height: 82px;
+  height: 73px;
 }
+
+/* .home_svg-img{
+  width: 60px;
+  color: #5805ff87;
+  height: 75px;
+} */
 
 /* about */
 
@@ -275,8 +281,8 @@ header {
 }
 
 .image img {
-  width: 500px;
-  padding-top: 20px;
+  width: 360px;
+  padding-top: 25px;
 }
 
 /* skills */
