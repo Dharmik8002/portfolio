@@ -326,10 +326,6 @@ header {
 .btn:hover {
   outline: 0;
 }
-/* .btn:hover {
-  background-color: black;
-  color: white;
-} */
 
 .header-right img {
   width: 100%;
@@ -345,12 +341,6 @@ header {
   color: #5805ff87;
   height: 73px;
 }
-
-/* .home_svg-img{
-  width: 60px;
-  color: #5805ff87;
-  height: 75px;
-} */
 
 /* about */
 
@@ -691,8 +681,6 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
   color: #fff;
 }
-
-
 
 /* contact section */
 
