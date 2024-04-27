@@ -187,8 +187,8 @@ a.active::before {
 }
 .cta__button {
   position: relative;
-  width: 41px;
-  height: 41px;
+  width: 42px;
+  height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,7 +319,7 @@ header {
 }
 
 .btn:active {
-  background-color: #ffdeda;
+  /* background-color: #ffdeda; */
   outline: 0;
 }
 
@@ -509,11 +509,6 @@ header {
 .qulification-button {
   font-size: 1.125rem;
   font-weight: 500;
-  cursor: pointer;
-}
-
-.qulification-button:hover {
-  color: #5805ff;
 }
 
 .q-icon {
