@@ -275,7 +275,7 @@ header {
 .btn {
   align-items: center;
   background-color: #5805ff;
-  border: 2px solid #111;
+  border: 1px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
   color: #fff;
@@ -283,7 +283,7 @@ header {
   display: flex;
   font-family: Inter,sans-serif;
   font-size: 16px;
-  height: 48px;
+  height: 50px;
   justify-content: center;
   line-height: 24px;
   max-width: 100%;
@@ -307,7 +307,7 @@ header {
   left: 0;
   width: 100%;
   position: absolute;
-  top: -2px;
+  top: 0px;
   transform: translate(8px, 8px);
   transition: transform .2s ease-out;
   z-index: -1;
