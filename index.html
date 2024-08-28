@@ -517,7 +517,7 @@
         </li>
 
         <li>
-          <a href="#contact" class="footer-link">Contactme</a>
+          <a href="#contact" class="footer-link">Contact me</a>
         </li>
       </ul>
 
@@ -536,6 +536,8 @@
       </div>
     </div>
     <p class="footer-copy">&copy; <span class="yearJS"></span> Dharmik. All rights reserved</p>
+    <p class="footer-copy">&copy; <span class="yearJS"></span> Dharmik. All rights reserved</p>
+    <ol type="1"></ol>
   </footer>
 
   <script>
@@ -588,10 +590,25 @@
 
       navLinks.classList.toggle("active");
     }
+    let arr1 = ["Rahul","Dharmik","Dhruv"];
+    for (let index = 0; index < arr1.length; index++) {
+      const element = arr1[index];
+      
+    console.log(index + 1, element);
+    }
+   
 
     window.addEventListener("DOMContentLoaded", (event) =>{
-      document.querySelector(".yearJS").innerHTML = new Date().getFullYear();
-    })
+      // const year =document.querySelectorAll(".yearJS")
+      // for (let index = 0; index < year.length; index++) {
+      //   const element = year[index];
+        
+      // element.innerHTML = new Date().getFullYear();
+      // }
+      // console.log(document.querySelectorAll(".yearJS"));
+      document.getElementsByClassName("yearJS").innerHTML = "2024"
+      console.log(document.getElementsByClassName("yearJS"));
+    })  
   </script>
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
