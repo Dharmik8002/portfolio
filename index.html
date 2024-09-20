@@ -536,7 +536,7 @@
       </div>
     </div>
     <p class="footer-copy">&copy; <span class="yearJS"></span> Dharmik. All rights reserved</p>
-    <p class="footer-copy">&copy; <span class="yearJS"></span> Dharmik. All rights reserved</p>
+
     <ol type="1"></ol>
   </footer>
 
@@ -599,15 +599,15 @@
    
 
     window.addEventListener("DOMContentLoaded", (event) =>{
-      // const year =document.querySelectorAll(".yearJS")
-      // for (let index = 0; index < year.length; index++) {
-      //   const element = year[index];
+      const year =document.querySelectorAll(".yearJS")
+      for (let index = 0; index < year.length; index++) {
+        const element = year[index];
         
-      // element.innerHTML = new Date().getFullYear();
-      // }
+      element.innerHTML = new Date().getFullYear();
+      }
       // console.log(document.querySelectorAll(".yearJS"));
       document.getElementsByClassName("yearJS").innerHTML = "2024"
-      console.log(document.getElementsByClassName("yearJS"));
+      // console.log(document.getElementsByClassName("yearJS"));
     })  
   </script>
 
